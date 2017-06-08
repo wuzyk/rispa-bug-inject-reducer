@@ -1,0 +1,26 @@
+{
+  "name": "@rispa/client",
+  "version": "0.1.0",
+  "description": "rispa client plugin",
+  "dependencies": {
+    "@rispa/core": "^0.1.0",
+    "@rispa/redux": "^0.1.0",
+    "@rispa/routes": "^0.1.0",
+    "@rispa/vendor": "^0.1.0",
+    "history": "^4.6.1",
+    "react": "15.5.4",
+    "redux": "^3.6.0",
+    "react-dom": "15.5.4",
+    "react-redux": "^5.0.4",
+    "react-router-dom": "^4.1.1",
+    "react-router-redux": "^5.0.0-alpha.6"
+  },
+  "devDependencies": {
+    "@rispa/eslint-config": "^0.1.0",
+    "react-hot-loader": "^3.0.0-beta.6"
+  },
+  "scripts": {
+    "lint": "rispa-eslint",
+    "lint:fix": "rispa-eslint --fix"
+  }
+}

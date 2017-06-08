@@ -1,0 +1,7 @@
+import Loadable from 'react-loadable'
+
+export default (store) => Loadable({
+  LoadingComponent: () => null,
+  loader: () => import('./registerModule'),
+  resolveModule: module => module(store)
+})
