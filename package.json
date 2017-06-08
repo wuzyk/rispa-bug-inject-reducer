@@ -1,0 +1,10 @@
+{
+  "name": "@rispa/vendor",
+  "version": "0.1.0",
+  "description": "rispa vendor plugin",
+  "dependencies": {
+    "react": "15.5.4",
+    "react-cookie": "^2.0.7",
+    "react-loadable": "^3.3.1"
+  }
+}
