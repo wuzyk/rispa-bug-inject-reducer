@@ -1,0 +1,38 @@
+{
+  "name": "@rispa/render-server",
+  "version": "0.1.0",
+  "description": "rispa server rendering plugin",
+  "dependencies": {
+    "@rispa/config": "^0.1.0",
+    "@rispa/redux": "^0.1.0",
+    "@rispa/routes": "^0.1.0",
+    "@rispa/vendor": "^0.1.0",
+    "@webpack-blocks/webpack2": "^0.4.0",
+    "babel-runtime": "^6.23.0",
+    "debug": "^2.6.6",
+    "electrode-react-ssr-caching": "^0.1.5",
+    "express": "^4.15.2",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "history": "^4.6.1",
+    "prop-types": "^15.5.8",
+    "react": "15.4.2",
+    "react-dom": "15.4.2",
+    "react-redux": "^5.0.4",
+    "react-router": "^4.1.1",
+    "react-tree-walker": "^2.1.1",
+    "require-relative": "^0.8.7",
+    "stats-webpack-plugin": "^0.6.0",
+    "universal-cookie-express": "^2.0.5",
+    "universal-webpack": "^0.3.9",
+    "webpack": "^2.4.1",
+    "webpack-flush-chunks": "^0.1.1",
+    "write-file-webpack-plugin": "^4.0.2"
+  },
+  "devDependencies": {
+    "@rispa/eslint-config": "^0.1.0"
+  },
+  "scripts": {
+    "lint": "rispa-eslint",
+    "lint:fix": "rispa-eslint --fix"
+  }
+}
