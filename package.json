@@ -6,6 +6,7 @@
     "@rispa/core": "^0.1.0",
     "@rispa/redux": "^0.1.0",
     "@rispa/routes": "^0.1.0",
+    "@rispa/server": "^0.1.0",
     "@rispa/vendor": "^0.1.0",
     "history": "^4.6.1",
     "react": "15.5.4",
