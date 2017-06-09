@@ -4,8 +4,10 @@
   "description": "rispa server rendering plugin",
   "dependencies": {
     "@rispa/config": "^0.1.0",
+    "@rispa/core": "^0.1.0",
     "@rispa/redux": "^0.1.0",
     "@rispa/routes": "^0.1.0",
+    "@rispa/server": "^0.1.0",
     "@rispa/vendor": "^0.1.0",
     "@webpack-blocks/webpack2": "^0.4.0",
     "babel-runtime": "^6.23.0",
