@@ -7,16 +7,16 @@ import clientConfiguration from '../src/configuration/client'
 import renderMiddleware from '../src/middleware'
 
 const activator = on => {
-  on(init(server), (command, registry) => {
+  on(init(server), registry => {
     registry.add('webpack.client', webpackExtentionClient)
     registry.set('render', renderMiddleware)
   })
 
-  on(init(build), (command, registry) => {
+  on(init(build), registry => {
     registry.add('webpack.client', webpackExtentionClient)
   })
 
-  const prepareHandler = (command, registry) => {
+  const prepareHandler = registry => {
     const webpackConfig = createConfig(registry.get('webpack.client') || [])
     registry.set('webpack.client', [() => clientConfiguration(
       webpackConfig,
