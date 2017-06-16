@@ -4,13 +4,13 @@ import webpackClientConfig from './client.wpc'
 import runGenerator from './generators'
 
 const activator = on => {
-  const handler = (command, registry) => {
+  const handler = registry => {
     registry.add('webpack.client', webpackClientConfig)
   }
   on(init(server), handler)
   on(init(build), handler)
 
-  on(start(generator), (command, registry, data) => {
+  on(start(generator), (registry, data) => {
     runGenerator(data)
   })
 }
