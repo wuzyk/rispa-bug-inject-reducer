@@ -1,0 +1,8 @@
+{
+  "name": "@rispa/config",
+  "version": "0.1.0",
+  "description": "rispa config plugin",
+  "devDependencies": {
+    "@rispa/eslint-config": "^1.0.0"
+  }
+}
