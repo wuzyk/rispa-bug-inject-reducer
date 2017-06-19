@@ -1,0 +1,31 @@
+import { createAction, createReducer } from 'redux-act'
+import { loop, Effects } from 'redux-loop'
+
+const initialState = {
+
+}
+
+export {
+
+} from './selector'
+
+export const action = createAction('{{ camelCase name }}/ACTION')
+
+export const handleAction = (state, payload) => ({
+  ...state
+})
+
+export const handleLoopAction = (state, payload) =>
+  loop(
+    {
+      ...state,
+    },
+    Effects.promise()
+  )
+
+
+const reducer = createReducer(on => {
+  on(action, handleAction)
+}, initialState)
+
+export default reducer
