@@ -52,3 +52,15 @@ const startApp = () => {
 }
 
 window.startApp = startApp
+
+//
+// disable react-devtools for production
+//
+/* eslint-disable no-underscore-dangle */
+if (
+  process.env.DISABLE_REACT_DEVTOOLS &&
+  window.__REACT_DEVTOOLS_GLOBAL_HOOK__ &&
+  Object.keys(window.__REACT_DEVTOOLS_GLOBAL_HOOK__._renderers).length
+) {
+  window.__REACT_DEVTOOLS_GLOBAL_HOOK__._renderers = {}
+}
