@@ -49,8 +49,7 @@ window.startApp = startApp
 //
 /* eslint-disable no-underscore-dangle */
 if (
-  process.env.NODE_ENV === 'production' &&
-  !process.env.REACT_DEVTOOLS &&
+  process.env.DISABLE_REACT_DEVTOOLS &&
   window.__REACT_DEVTOOLS_GLOBAL_HOOK__ &&
   Object.keys(window.__REACT_DEVTOOLS_GLOBAL_HOOK__._renderers).length
 ) {
