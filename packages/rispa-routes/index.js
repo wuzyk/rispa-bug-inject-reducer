@@ -5,6 +5,7 @@ const getRoutes = (store, when) => {
   /* eslint-disable global-require */
   const modules = [
     // $$ ADD HERE ~~ Do not remove
+    require('@project/feature'),
   ]
 
   const routes = modules

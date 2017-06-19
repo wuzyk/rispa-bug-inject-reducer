@@ -1,0 +1,11 @@
+{
+  "name": "@project/feature",
+  "version": "0.1.0",
+  "main": "./src/index.js",
+  "dependencies": {
+    "@rispa/redux": "^0.1.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "prop-types": "^15.5.6"
+  }
+}
