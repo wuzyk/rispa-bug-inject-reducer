@@ -1,0 +1,27 @@
+{
+  "pluginsPath": "./packages",
+  "plugins": [
+    "rispa-redux",
+    "rispa-eslint-config",
+    "rispa-config",
+    "rispa-core",
+    "rispa-webpack",
+    "rispa-server",
+    "rispa-client",
+    "rispa-render-server",
+    "rispa-routes",
+    "rispa-vendor"
+  ],
+  "remotes": {
+    "rispa-redux": "https://github.com/rispa-io/rispa-redux.git",
+    "rispa-eslint-config": "https://github.com/rispa-io/rispa-eslint-config.git",
+    "rispa-config": "https://github.com/rispa-io/rispa-config.git",
+    "rispa-core": "https://github.com/rispa-io/rispa-core.git",
+    "rispa-webpack": "https://github.com/rispa-io/rispa-webpack.git",
+    "rispa-server": "https://github.com/rispa-io/rispa-server.git",
+    "rispa-client": "https://github.com/rispa-io/rispa-client.git",
+    "rispa-render-server": "https://github.com/rispa-io/rispa-render-server.git",
+    "rispa-routes": "https://github.com/rispa-io/rispa-routes.git",
+    "rispa-vendor": "https://github.com/rispa-io/rispa-vendor.git"
+  }
+}
