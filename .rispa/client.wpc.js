@@ -7,9 +7,8 @@ export default context => ({
   ],
   plugins: [
     new context.webpack.DefinePlugin({
-      'process.env.DISABLE_REACT_DEVTOOLS': (
-        JSON.stringify(process.env.DISABLE_REACT_DEVTOOLS)
-      ),
+      'process.env.DISABLE_REACT_DEVTOOLS': JSON.stringify(process.env.DISABLE_REACT_DEVTOOLS),
+      'process.env.DISABLE_REDUX_DEVTOOLS': JSON.stringify(process.env.DISABLE_REDUX_DEVTOOLS),
     }),
   ],
 })
