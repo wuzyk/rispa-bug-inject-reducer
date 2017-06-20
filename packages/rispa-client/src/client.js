@@ -13,7 +13,16 @@ import routes from '@rispa/routes'
 
 const startApp = () => {
   const history = createHistory()
-  const store = configureStore(history, window.RISPA_INITIAL_STATE)
+
+  const reduxDevtoolCompose = !process.env.DISABLE_REDUX_DEVTOOLS
+    ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ // eslint-disable-line no-underscore-dangle
+    : null
+
+  const store = configureStore(
+    history,
+    window.RISPA_INITIAL_STATE,
+    reduxDevtoolCompose,
+  )
   const when = createWhen(store, window.RISPA_INITIAL_STATE)
 
   const render = getRoutes => {
@@ -43,3 +52,15 @@ const startApp = () => {
 }
 
 window.startApp = startApp
+
+//
+// disable react-devtools for production
+//
+/* eslint-disable no-underscore-dangle */
+if (
+  process.env.DISABLE_REACT_DEVTOOLS &&
+  window.__REACT_DEVTOOLS_GLOBAL_HOOK__ &&
+  Object.keys(window.__REACT_DEVTOOLS_GLOBAL_HOOK__._renderers).length
+) {
+  window.__REACT_DEVTOOLS_GLOBAL_HOOK__._renderers = {}
+}
